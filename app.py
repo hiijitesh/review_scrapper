@@ -7,7 +7,8 @@ from urllib.request import urlopen as uReq
 import logging
 logging.basicConfig(filename="scrapper.log" , level=logging.INFO)
 
-app = Flask(__name__)
+application = Flask(__name__)
+app = application
 
 @app.route("/", methods = ['GET'])
 def homepage():
@@ -17,7 +18,7 @@ def homepage():
 def index():
     if request.method == 'POST':
         try:
-            searchString = request.form['content'].replace(" ","+")
+            searchString = request.form['content'].replace(" ","")
             flipkart_url = "https://www.flipkart.com/search?q=" + searchString
             uClient = uReq(flipkart_url)
             flipkartPage = uClient.read()
