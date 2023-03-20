@@ -1,5 +1,10 @@
-### Flipkart_Review_Scrapper
-This App can scrap the Review from flipkart, we just need give the product name
+
+## Product Review Scrapper | Python, Flask | § GitHub | Jan 2023 – Feb 2023
+• Created Flask application for scrapping review of any product from flipkart.
+
+• Boosted accuracy by 40% by implementing a Flask Application along data stored in csv file
+
+• Scraped over 1000+ product review of 10 different categories from Flipkart using selenium
 
 
 
@@ -27,3 +32,6 @@ venv\Scripts\activate
 ```
 pip install requirements.txt
 ```
+
+
+
